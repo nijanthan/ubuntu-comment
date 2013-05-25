@@ -36,3 +36,4 @@ http://localhost/phpmyadmin
 ----------------ssh enable on ubuntu------------------- 
 mkdir ~/.ssh
 chmod 700 ~/.ssh
+ssh -i /path/to/key -vT git@github.com
