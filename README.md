@@ -30,3 +30,9 @@ Now, there must be no problems while opening:
 
 http://localhost                  
 http://localhost/phpmyadmin
+
+
+
+----------------ssh enable on ubuntu------------------- 
+mkdir ~/.ssh
+chmod 700 ~/.ssh
