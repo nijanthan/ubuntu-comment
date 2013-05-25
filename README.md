@@ -37,3 +37,26 @@ http://localhost/phpmyadmin
 mkdir ~/.ssh
 chmod 700 ~/.ssh
 ssh -i /path/to/key -vT git@github.com
+
+
+Code:
+
+ls -l `which sudo`
+
+Code:
+
+chmod 4755 `which sudo`
+
+Code:
+
+chown root:root `which sudo`
+
+Ensure that the system complaining about the sudo command is using the host sudo, and not the client sudo.
+
+Do something like:
+
+Code:
+
+updatedb && locate sudo
+
+as root. See if you have multiple copies, and try to figure out which one is being invoked.
